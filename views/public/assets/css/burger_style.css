@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(124, 153, 179);
+}
+.jumbotron{
+    background-color: antiquewhite;
+}
+img {
+    width: 400px;
+    height: 300px;
+}
+
+.btn {
+    background-color: rgb(128, 47, 47);
+}
+
+.header1 {
+    background-color: rgb(218, 76, 76);
+}
+
+.header2 {
+    background-color: rgb(199, 199, 83);
+}
