@@ -20,3 +20,7 @@ img {
 .header2 {
     background-color: rgb(199, 199, 83);
 }
+
+div.card {
+    background-color: antiquewhite;
+}

@@ -9,9 +9,8 @@
 
                 <form class="create-form text-center">
 
-                    <div class="form-group">
-                        <label for="ca">Burger Name:</label>
-                        <input type="text" id="burger" name="name">
+                    <div class="form-group ">
+                        <input class="text-center" type="text" id="burger" placeholder="Burger name" name="name">
                     </div>
                     <button class="btn btn-danger" type="submit">Add Burger</button>
                 </form>
@@ -21,7 +20,7 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="card">
-                <div class="card-header text-center header1">
+                <div class="card-header text-center mb-3 header1">
                     New Burgers
                 </div>
                 <ul>
@@ -30,7 +29,7 @@
                     <div>
                         <span>{{this.id}}. {{this.burger_name}}</span>
                       
-                            <button class="btn btn-danger ml-5" id="eat" type="submit">Devour Burger</button>
+                            <button class="btn btn-danger ml-5" id="eat" data-id="{{this.id}}" type="submit">Devour Burger</button>
                       
                         <hr>
                     </div>
@@ -41,18 +40,18 @@
         </div>
         <div class="col-sm-6">
             <div class="card">
-                <div class="card-header text-center header2">
+                <div class="card-header text-center mb-3 header2">
                     Devoured Burgers
                 </div>
                 <ul>
                     {{#each burgers}}
-                    {{#unless devoured}}
+                    {{#if devoured}}
                     <div>
                         <span>{{this.id}}. {{this.burger_name}}</span>
                                             
                         <hr>
                     </div>
-                    {{/unless}}
+                    {{/if}}
                     {{/each}}
                 </ul>
             </div>
