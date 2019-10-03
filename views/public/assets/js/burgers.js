@@ -42,7 +42,7 @@ $(function () {
         var id = $(this).data("id");
 
         $.ajax("/api/burgers/" + id, {
-            type: "Delete",
+            type: "Delete"
         }).then(
             function () {
                 console.log("deleted burger", id);
