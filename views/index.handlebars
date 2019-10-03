@@ -48,7 +48,8 @@
                     {{#if devoured}}
                     <div>
                         <span>{{this.id}}. {{this.burger_name}}</span>
-                                            
+                        <button class="btn btn-danger ml-5" id="delete" data-id="{{this.id}}" type="delete"><i class="far fa-trash-alt"></i></button>
+         
                         <hr>
                     </div>
                     {{/if}}
