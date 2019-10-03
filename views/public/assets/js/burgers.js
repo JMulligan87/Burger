@@ -43,11 +43,7 @@ $(function () {
 
         $.ajax("/api/burgers/" + id, {
             type: "Delete"
-        }).then(
-            function () {
-                console.log("deleted burger", id);
-                location.reload();
-            })
+        }).then(location.reload());
     });
 
 });
